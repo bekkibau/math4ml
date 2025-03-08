@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Sets
+tags: [concepts]
 ---
-
-# Sets
 
 ## Notation
 Sets are written using curly brackets:

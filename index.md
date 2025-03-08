@@ -3,22 +3,30 @@ layout: default
 title: Math4ML
 ---
 
-# Math4ML
+This is my collection of notes on math for machine learning.  
+Using **KaTeX’s own font** makes everything look much better.
 
-Just my personal collection of notes on math for machine learning.
-Mostly for my own reference, but feel free to use it if you find it useful.
-Noting down misconceptions, common mistakes, and other things that I find useful.
+Check that these equations **blend well with the text**:  
 
-Check that the following equations render correctly, else KaTeX rendering is not working:
+Inline: $E = mc^2$ looks smooth inside a sentence.
 
-Inline test:
-$E = mc^2$
-
-Block test:
-
+Block math:
 $$
 \int_0^\infty e^{-x^2} \,dx = \frac{\sqrt{\pi}}{2}
 $$
 
-## Notetaking References
-- [KaTeX Workarounds](katex-workarounds.md)< Trigger GitHub Pages refresh -->
+## Tags
+These are the tags:
+
+{% assign all_tags = "" | split: "," %}
+{% for page in site.pages %}
+  {% for tag in page.tags %}
+    {% unless all_tags contains tag %}
+      {% assign all_tags = all_tags | push: tag %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% for tag in all_tags %}
+- [{{ tag | capitalize }}](/topics/{{ tag }}/)
+{% endfor %}
