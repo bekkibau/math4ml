@@ -1,2 +1,3 @@
+baseurl: "/math4ml" # GitHub Pages project URL
 kramdown:
   math_engine: none
