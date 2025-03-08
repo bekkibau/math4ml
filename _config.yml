@@ -1,3 +1,7 @@
-baseurl: "/math4ml" # GitHub Pages project URL
+include:
+  - tags.md
+baseurl: "/math4ml"
 kramdown:
   math_engine: none
+plugins:
+  - jekyll-sitemap
