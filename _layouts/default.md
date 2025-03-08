@@ -48,8 +48,8 @@
 <header>
     <h1>{{ page.title }}</h1>
     <nav>
-        <a href="/">Home</a> |
-        <a href="/tags.md/">Tags</a>
+        <a href="/">Home</a> | 
+        <a href="/tags/">Tags</a>
     </nav>
     <hr>
 </header>
