@@ -1,7 +1,2 @@
 kramdown:
   math_engine: none
-
-collections:
-  tags:
-    output: true
-    permalink: /tags/:name/
