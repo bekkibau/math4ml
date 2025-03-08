@@ -49,8 +49,8 @@
     <h1>{{ page.title }}</h1>
     <nav>
         <a href="/">Home</a> | 
-        <a href="/_topics/concepts/">Concepts</a> | 
-        <a href="/_topics/notetaking/">Notetaking</a> |
+        <a href="/_tags/concepts/">Concepts</a> | 
+        <a href="/_tags/notetaking/">Notetaking</a> |
     </nav>
     <hr>
 </header>

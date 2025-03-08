@@ -28,5 +28,5 @@ These are the tags:
 {% endfor %}
 
 {% for tag in all_tags %}
-- [{{ tag | capitalize }}](/topics/{{ tag }}/)
+- [{{ tag | capitalize }}](/tags/{{ tag }}/)
 {% endfor %}
