@@ -21,4 +21,4 @@ $$
 $$
 
 ## Notetaking References
-- [KaTeX Workarounds](katex-workarounds.md)
+- [KaTeX Workarounds](katex-workarounds.md)< Trigger GitHub Pages refresh -->
