@@ -1,7 +1,16 @@
-include:
-  - tags.md
+url: "https://bekkibau.github.io"
 baseurl: "/math4ml"
+permalink: /:title/
+future: true
+include:
+  - assets
+  - tags.md
+markdown: kramdown
 kramdown:
+  input: GFM
   math_engine: none
 plugins:
   - jekyll-sitemap
+jekyll_serve:
+  environment: development
+  github: false

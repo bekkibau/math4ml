@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaTeX Limitations</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/math4ml/assets/css/styles.css" />
+
+    
+      <!-- KaTeX CDN for Math Rendering -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" />
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false },
+              { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code", "h1", "h2", "h3", "h4", "h5", "h6"]
+          });
+        });
+      </script>
+    
+  </head>
+
+  <body>
+    <div class="site-container">
+      <!-- Navigation Bar -->
+      <header class="navbar">
+        <nav>
+          <a href="/math4ml/">Home</a>
+          <a href="/math4ml/tags/">Tags</a>
+        </nav>
+      </header>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <div class="post-header">
+          <h1 class="post-title">KaTeX Limitations</h1>
+          
+            <div class="post-date">March 08, 2025</div>
+          
+        </div>
+        <main class="main-content">  <!-- The actual post body -->
+  <p>Below is a table listing <strong>KaTeX limitations</strong> and their <strong>workarounds</strong>.</p>
+
+<h2 id="table-of-katex-limitations--workarounds"><strong>Table of KaTeX Limitations &amp; Workarounds</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Issue</strong></th>
+      <th><strong>❌ Does NOT Work</strong></th>
+      <th><strong>✅ Workaround</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>No <code class="language-plaintext highlighter-rouge">\text{}</code> support</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">`$ \text{This is a test.} $`</code></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">\mathrm{}</code> for short words:  <code class="language-plaintext highlighter-rouge">`$ \mathrm{This\ is\ a\ test.} $`</code>  Or move text outside math mode:  <code class="language-plaintext highlighter-rouge">`$ x^2 + y^2 = z^2 $`</code></td>
+    </tr>
+    <tr>
+      <td><strong>Units inside equations</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">`$ v = 20 m/s $`</code></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">\mathrm{}</code> for units:  <code class="language-plaintext highlighter-rouge">`$ v = 20 \mathrm{m/s} $`</code></td>
+    </tr>
+    <tr>
+      <td><strong>Piecewise function conditions</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">` \begin{cases} x^2, &amp; \text{if } x \geq 0 \\ -x^2, &amp; \text{if } x &lt; 0 \end{cases} `</code></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">\texttt{}</code> for conditions:  <code class="language-plaintext highlighter-rouge">` \begin{cases} x^2, &amp; \texttt{if } x \geq 0 \\ -x^2, &amp; \texttt{if } x &lt; 0 \end{cases} `</code></td>
+    </tr>
+    <tr>
+      <td><strong>Spacing inside equations</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">`$ A = B \quad and \quad C = D $`</code></td>
+      <td>Manually insert spacing:  <code class="language-plaintext highlighter-rouge">`$ A = B \quad \texttt{and} \quad C = D $`</code></td>
+    </tr>
+  </tbody>
+</table>
+
+</main>
+      </main>
+    </div>
+  </body>
+</html>

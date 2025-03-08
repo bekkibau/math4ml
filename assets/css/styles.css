@@ -1,0 +1,81 @@
+/* Overall Site Container */
+.site-container {
+    max-width: 70ch; /* Adjust as desired */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: KaTeX_Main, serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+/* Main Content Area */
+.main-content {
+    width: 100%;
+    text-align: left;
+}
+
+/* Post Header: Title and Date Container */
+.post-header {
+    text-align: center;
+    margin-top: 2rem; /* This adds space after the header */
+    margin-bottom: 2rem; /* This adds space after the header */
+}
+
+/* Title: no margin between title and date */
+.post-title {
+    margin: 0;
+}
+
+/* Date: no margin on top, but might have bottom margin if desired */
+.post-date {
+    margin: 0;
+    color: #444;
+}
+
+/* KaTeX Block Math Centering */
+.katex-display {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+/* Responsive Navbar (Optional Toggle) */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: left;
+        padding: 10px;
+    }
+    .navbar nav {
+        display: none;
+    }
+    .navbar.active nav {
+        display: block;
+    }
+}
+
+.tag-post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: add padding or border-bottom for separation */
+    padding: 0.5rem 0;
+}
+
+.post-date-right {
+    text-align: right;
+    /* You can adjust font size or color if desired */
+    color: #444;
+}
