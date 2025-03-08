@@ -11,13 +11,18 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
             onload="renderMathInElement(document.body);"></script>
 
+    <!-- Optional: Slightly Adjust KaTeX Font Size -->
+    <style>
+        .katex { font-size: 1.1em; } /* Adjust as needed */
+    </style>
 </head>
 <body>
 
     <header>
         <h1>{{ page.title }}</h1>
         <nav>
-            <a href="/">Home</a> |
+            <a href="/">Home</a> | 
+            <a href="/katex-workarounds.md">KaTeX Workarounds</a>
         </nav>
         <hr>
     </header>
